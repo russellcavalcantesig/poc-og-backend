@@ -16,7 +16,7 @@ RUN cat package.json >> /tmp/debug_output.txt
 
 COPY .env ./.env
 
-EXPOSE 3001
+EXPOSE 3000
 
 # Use pm2-runtime para manter o container rodando
 CMD ["pm2-runtime", "start", "dist/server.js", "--name", "backend"]
